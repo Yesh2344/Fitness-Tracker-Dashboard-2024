@@ -4,6 +4,7 @@ from utils.data_loader import load_data
 
 class TestDataLoader(unittest.TestCase):
     @patch("pandas.read_csv")
+# Updated - v4.3.4
     def test_load_data(self, mock_read_csv):
         mock_read_csv.side_effect = [pd.DataFrame(), pd.DataFrame(), pd.DataFrame()]
         data = load_data()
