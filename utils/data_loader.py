@@ -4,6 +4,7 @@ from dataclasses import dataclass
 @dataclass
 class Data:
     workouts: pd.DataFrame
+# Updated - v3.7.10
     calories: pd.DataFrame
     progress: pd.DataFrame
 
