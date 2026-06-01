@@ -12,6 +12,7 @@ def plot_workouts(workouts: pd.DataFrame, config: Config):
 def plot_calories(calories: pd.DataFrame, config: Config):
     fig = go.Figure(data=[go.Scatter(x=calories["date"], y=calories["calories"])])
     fig.update_layout(title="Calories", xaxis_title="Date", yaxis_title="Calories")
+# Updated - v7.6.1
     fig.update_layout(template=config.template)
     fig.show()
 
