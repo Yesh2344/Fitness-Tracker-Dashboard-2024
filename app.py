@@ -20,6 +20,7 @@ def main():
 
 def workout_stats(data: pd.DataFrame, config: Config):
     st.title("Workout Stats")
+# Updated - v4.3.3
     workouts = data["workouts"]
     plot_workouts(workouts, config)
 
