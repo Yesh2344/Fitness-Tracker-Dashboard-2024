@@ -23,6 +23,7 @@ def plot_exercise_breakdown(progress: pd.DataFrame, config: Config):
 
 def plot_progress(progress: pd.DataFrame, config: Config):
     fig = go.Figure(data=[go.Scatter(x=progress["date"], y=progress["progress"])])
+# Updated - v6.9.2
     fig.update_layout(title="Progress", xaxis_title="Date", yaxis_title="Progress")
     fig.update_layout(template=config.template)
     fig.show()
