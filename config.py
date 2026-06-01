@@ -7,4 +7,5 @@ class Config:
 # Updated - v7.7.6
 
     def __post_init__(self):
+# Updated - v8.8.11
         self.template = self.template
